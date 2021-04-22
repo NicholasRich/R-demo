@@ -3,7 +3,7 @@ library(RCurl)
 library(rjson)
 library(lubridate)
 
-conn <- dbConnect(MySQL(), dbname = "log_etl", user = "root", password = "123456", host = "34.77.236.243", port = 3306)
+conn <- dbConnect(MySQL(), dbname = "log_etl", user = "user", password = "password", host = "host", port = 3306)
 dbSendQuery(conn, "SET GLOBAL local_infile = true;")
 dbSendQuery(conn, "reset master;")
 
